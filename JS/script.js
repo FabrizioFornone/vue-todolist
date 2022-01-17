@@ -30,11 +30,11 @@ new Vue({
     removeItem: function (index) {
       this.todo.splice(index, 1);
     },
-    changeStatus: function () {
-      if (this.item.done === true) {
-        this.item.done = false;
+    changeStatus: function (index) {
+      if (this.todo[index].done) {
+        this.todo[index].done = false;
       } else {
-        this.item.done = true;
+        this.todo[index].done = true;
       }
     },
   },

@@ -35,13 +35,14 @@
           <ul>
             <!-- v for dell'array -->
             <li
-              class="p-3"
+              class="p-3 d-flex justify-content-between"
               v-for="(item, index) in todo"
-              :class=" item.done === true ? 'crossed-out' : 'normal-text'" @click="changeStatus"
+              :class=" item.done === true ? 'crossed-out' : 'normal-text'"
             >
               {{item.text}}
-              <div class="close" @click="removeItem(index)">
-                <i class="fas fa-times"></i>
+              <div>
+                <i class="fas fa-times px-1" @click="removeItem(index)"></i>
+                <i class="far fa-check-circle px-1" @click="changeStatus(index)"></i>
               </div>
             </li>
           </ul>
