@@ -37,7 +37,7 @@
             <li
               class="p-3"
               v-for="(item, index) in todo"
-              :class=" item.done === true ? 'crossed-out' : 'normal-text'"
+              :class=" item.done === true ? 'crossed-out' : 'normal-text'" @click="changeStatus"
             >
               {{item.text}}
               <div class="close" @click="removeItem(index)">

@@ -31,5 +31,12 @@ new Vue({
       console.log("Rimuovo l'elemento di indice: ", index);
       this.todo.splice(index, 1);
     },
+    changeStatus: function () {
+      if (this.todo.done === true) {
+        this.todo.done = false;
+      } else {
+        this.todo.done = true;
+      }
+    },
   },
 });
