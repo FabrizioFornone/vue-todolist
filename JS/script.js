@@ -20,7 +20,10 @@ new Vue({
   methods: {
     addItem: function () {
       //pusho nell'array
-      this.todo.push(this.temporaryItem);
+      this.todo.push({
+        text: this.temporaryItem,
+        done: false,
+      });
       //svuoto dopo il push
       this.temporaryItem = "";
     },
