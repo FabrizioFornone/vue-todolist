@@ -1,7 +1,20 @@
 new Vue({
   el: "#app",
   data: {
-    todo: ["Fare i compiti", "Fare la spesa", "Fare il bucato"],
+    todo: [
+      {
+        text: "fare i compiti",
+        done: false,
+      },
+      {
+        text: "fare la spesa",
+        done: true,
+      },
+      {
+        text: "fare il bucato",
+        done: false,
+      },
+    ],
     temporaryItem: "",
   },
   methods: {
