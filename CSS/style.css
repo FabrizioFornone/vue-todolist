@@ -41,3 +41,7 @@ i {
 .crossed-out {
     text-decoration: line-through;
 }
+
+.undone {
+    color: blue;
+}
