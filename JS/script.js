@@ -28,14 +28,13 @@ new Vue({
       this.temporaryItem = "";
     },
     removeItem: function (index) {
-      console.log("Rimuovo l'elemento di indice: ", index);
       this.todo.splice(index, 1);
     },
     changeStatus: function () {
-      if (this.todo.done === true) {
-        this.todo.done = false;
+      if (this.item.done === true) {
+        this.item.done = false;
       } else {
-        this.todo.done = true;
+        this.item.done = true;
       }
     },
   },
