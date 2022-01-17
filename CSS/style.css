@@ -39,3 +39,7 @@ li {
 i {
   cursor: pointer;
 }
+
+.crossed-out {
+    text-decoration: line-through;
+}

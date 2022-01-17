@@ -33,7 +33,11 @@
         <div class="list-container p-5 rounded">
           <ul>
             <!-- v for dell'array -->
-            <li class="p-3 " v-for="(item, index) in todo">
+            <li
+              class="p-3"
+              v-for="(item, index) in todo"
+              :class=" item.done === true ? 'crossed-out' : 'normal-text'"
+            >
               {{item.text}}
               <div class="close" @click="removeItem(index)">
                 <i class="fas fa-times"></i>
