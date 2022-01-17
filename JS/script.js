@@ -3,15 +3,15 @@ new Vue({
   data: {
     todo: [
       {
-        text: "fare i compiti",
+        text: "Fare i compiti",
         done: false,
       },
       {
-        text: "fare la spesa",
+        text: "Fare la spesa",
         done: true,
       },
       {
-        text: "fare il bucato",
+        text: "Fare il bucato",
         done: false,
       },
     ],
