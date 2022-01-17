@@ -19,7 +19,7 @@ new Vue({
   },
   methods: {
     addItem: function () {
-      //pusho nell'array
+      //pusho nell'array l'oogetto
       this.todo.push({
         text: this.temporaryItem,
         done: false,
