@@ -38,7 +38,7 @@ new Vue({
   },
   methods: {
     addItem: function () {
-      //pusho nell'array l'oogetto
+      //pusho nell'array l'oggetto
       this.todo.push({
         text: this.temporaryItem,
         done: false,
@@ -50,11 +50,7 @@ new Vue({
       this.todo.splice(index, 1);
     },
     changeStatus: function (index) {
-      if (this.todo[index].done) {
-        this.todo[index].done = false;
-      } else {
-        this.todo[index].done = true;
-      }
+      this.todo[index].done = !this.todo[index].done;
     },
   },
 });

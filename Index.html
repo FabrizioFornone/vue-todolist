@@ -39,7 +39,7 @@
               v-for="(item, index) in todo"
             >
               <span
-                :class=" { crossedOut: item.done}"
+                :class=" { 'crossed-out': item.done }"
               >
                 {{item.text}}
               </span>

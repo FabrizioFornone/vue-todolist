@@ -38,6 +38,6 @@ i {
   cursor: pointer;
 }
 
-.crossedOut {
+.crossed-out {
     text-decoration: line-through;
 }
