@@ -49,8 +49,8 @@ new Vue({
     removeItem: function (index) {
       this.todo.splice(index, 1);
     },
-    changeStatus: function (index) {
-      this.todo[index].done = !this.todo[index].done;
+    changeStatus: function (item) {
+      item.done = !item.done;
     },
   },
 });
